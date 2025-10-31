@@ -1,12 +1,12 @@
 import { EntryProvider } from "../contexts/UnitTabContext";
-import CustomInput from "./CustomInput";
+import AppInput from "./AppInput";
 import UnitTab from "./UnitTab";
 
 const EntryTest = () => {
   return (
     <EntryProvider>
       <UnitTab />
-      <CustomInput />
+      <AppInput />
     </EntryProvider>
   );
 };

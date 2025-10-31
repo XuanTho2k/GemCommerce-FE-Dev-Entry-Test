@@ -9,4 +9,14 @@ describe("UnitTab", () => {
     expect(screen.getByText("%")).toBeDefined();
     expect(screen.getByText("px")).toBeDefined();
   });
+  //   it("should select pixel when clicked", () => {
+  //     render(<UnitTab />);
+  //     fireEvent.click(screen.getByText("px"));
+  //     expect(screen.getByText("px")).toHaveBeenCalledTimes(1);
+  //   });
+  //   it("should select % when clicked", () => {
+  //     render(<UnitTab />);
+  //     fireEvent.click(screen.getByText("%"));
+  //     expect(screen.getByText("%")).toHaveBeenCalledTimes(1);
+  //   });
 });

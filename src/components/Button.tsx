@@ -21,17 +21,18 @@ const Button = ({
   tooltipContent,
 }: ButtonProps) => {
   return (
-    <div
+    <button
       className={`flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] ${customClass} ${
         isSelected ? "bg-[#424242]" : ""
       } ${isDisabled ? "!cursor-not-allowed hover:bg-transparent" : ""}`}
-      onClick={!isDisabled ? onClick : undefined}
+      onClick={onClick}
+      disabled={isDisabled}
     >
       {isDisabled && tooltipContent && (
         <Tooltip tooltipContent={tooltipContent} />
       )}
       {children}
-    </div>
+    </button>
   );
 };
 
