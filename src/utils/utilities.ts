@@ -1,6 +1,6 @@
 export const AdminUtils = {
   formatNumericValue: (
-    value: string,
+    value: string | null,
     unit: "percentage" | "pixel" = "pixel"
   ) => {
     if (value == null || value === "") return "0";

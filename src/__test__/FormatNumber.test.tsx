@@ -51,7 +51,7 @@ describe("AdminUtils.formatNumericValue", () => {
   //  8. Nếu input là rỗng/null -> '0'
   it("returns 0 for empty or null input", () => {
     expect(AdminUtils.formatNumericValue("")).toBe("0");
-    expect(AdminUtils.formatNumericValue(null as any, "percentage")).toBe("0");
+    expect(AdminUtils.formatNumericValue(null, "percentage")).toBe("0");
   });
 
   //  9. Disable button “-” nếu giá trị hiện tại là 0
