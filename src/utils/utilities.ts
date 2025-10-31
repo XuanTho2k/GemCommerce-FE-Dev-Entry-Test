@@ -4,8 +4,6 @@ export const AdminUtils = {
 
     value = value.replace(",", ".");
 
-    // 2️⃣ Giữ lại chỉ các ký tự số và dấu chấm
-    // → Nhưng chỉ cho phép 1 dấu chấm duy nhất
     let cleaned = "";
     let dotUsed = false;
     let minusUsed = false;
