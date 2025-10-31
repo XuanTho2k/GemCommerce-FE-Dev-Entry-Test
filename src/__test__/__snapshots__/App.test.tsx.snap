@@ -6,39 +6,39 @@ exports[`toUpperCase 1`] = `
     class="w-screen h-screen bg-neutral-950 flex items-center justify-center text-neutral-100"
   >
     <div
-      class="w-70 bg-[#151515] p-4 rounded-lg"
+      class="w-70 bg-[#151515] p-4 py-[15px] rounded-lg"
     >
       <div
         class="flex flex-col gap-4"
       >
         <div
-          class="flex items-center"
+          class="flex items-center gap-2"
         >
           <div
-            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]"
+            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA] leading-5"
           >
             Unit
           </div>
           <div
-            class="flex-1 min-w-35 flex items-center p-[2px] bg-[#212121] rounded-md"
+            class="flex-1 min-w-35 flex items-center p-[3px] bg-[#212121] rounded-md"
           >
             <button
-              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] undefined bg-[#424242] "
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B]  bg-[#424242] "
             >
               %
             </button>
             <button
-              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] undefined  "
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] text-[#AAAAAA]  "
             >
               px
             </button>
           </div>
         </div>
         <div
-          class="flex items-center"
+          class="flex items-center gap-2"
         >
           <div
-            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]"
+            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA] leading-5"
           >
             Value
           </div>
@@ -52,7 +52,7 @@ exports[`toUpperCase 1`] = `
               <div
                 class="absolute invisible w-max opacity-0 group-hover:visible group-hover:opacity-100 
            transition bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 
-           bg-[#212121]  font-normal text-xs px-2 py-1 rounded 
+           bg-[#212121]  font-normal text-xs font-normal px-2 py-[3px] leading-5 rounded 
            after:content-[''] after:absolute after:top-full after:left-1/2 
            after:-translate-x-1/2 after:border-4 
            after:border-transparent after:border-t-[#212121]"
@@ -66,11 +66,10 @@ exports[`toUpperCase 1`] = `
               />
             </button>
             <div
-              class="flex-1 flex items-center justify-center"
+              class="flex-1 flex items-center justify-center min-h-[36px] min-w-17"
             >
               <input
-                class="focus:outline-none focus:ring-0 p-0 m-0 text-center w-15"
-                max="100"
+                class="focus:outline-none focus:ring-0 p-0 m-0 text-center w-13 h-[20px]"
                 name="quantity"
                 type="text"
                 value="0"

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import minusIcon from "../assets/icons/minus-icon.svg";
 import plusIcon from "../assets/icons/plus-icon.svg";
 import { AdminUtils } from "../utils/utilities";
-import Button from "./Button";
+import Button from "./common/Button";
 import { EntryContext } from "../contexts/EntryContext";
 
 const AppInput = () => {
@@ -46,8 +46,8 @@ const AppInput = () => {
   }
 
   return (
-    <div className="flex items-center">
-      <div className="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]">
+    <div className="flex items-center gap-2">
+      <div className="flex-1 mr-auto text-xs font-normal text-[#AAAAAA] leading-5">
         Value
       </div>
       <div
@@ -70,15 +70,14 @@ const AppInput = () => {
           tooltipContent="Value must greater than 0"
         />
         <div
-          className="flex-1 flex items-center justify-center"
+          className="flex-1 flex items-center justify-center min-h-[36px] min-w-17"
           onMouseEnter={() => setInInputHover(true)}
           onMouseLeave={() => setInInputHover(false)}
         >
           <input
             type="text"
             name="quantity"
-            max={selected == 0 ? 100 : undefined}
-            className="focus:outline-none focus:ring-0 p-0 m-0 text-center w-15"
+            className="focus:outline-none focus:ring-0 p-0 m-0 text-center w-13 h-[20px]"
             value={value}
             onChange={handleInputChange}
             onFocus={handleInputFocus}
