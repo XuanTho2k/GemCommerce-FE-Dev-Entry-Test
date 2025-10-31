@@ -6,9 +6,87 @@ exports[`toUpperCase 1`] = `
     class="w-screen h-screen bg-neutral-950 flex items-center justify-center text-neutral-100"
   >
     <div
-      class="w-96 bg-neutral-800 p-4 rounded-lg"
+      class="w-70 bg-[#151515] p-4 rounded-lg"
     >
-      // Your component go here
+      <div
+        class="flex flex-col gap-4"
+      >
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]"
+          >
+            Unit
+          </div>
+          <div
+            class="flex-1 min-w-35 flex items-center p-[2px] bg-[#212121] rounded-md"
+          >
+            <div
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] undefined bg-[#424242] "
+            >
+              %
+            </div>
+            <div
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] undefined  "
+            >
+              px
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]"
+          >
+            Value
+          </div>
+          <div
+            class="flex-1 min-w-35 flex items-center transition-all duration-200 bg-[#212121] rounded-md  "
+          >
+            <div
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] rounded-r-none p-1 h-[36px]  !cursor-not-allowed hover:bg-transparent"
+            >
+              <div
+                class="absolute invisible w-max opacity-0 group-hover:visible group-hover:opacity-100 
+           transition bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 
+           bg-[#212121]  font-normal text-xs px-2 py-1 rounded 
+           after:content-[''] after:absolute after:top-full after:left-1/2 
+           after:-translate-x-1/2 after:border-4 
+           after:border-transparent after:border-t-[#212121]"
+              >
+                Value must greater than 0
+              </div>
+              <img
+                alt="minus"
+                class="opacity-50"
+                src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M4%209.75C4%209.33579%204.33579%209%204.75%209L15.25%209C15.6642%209%2016%209.33579%2016%209.75C16%2010.1642%2015.6642%2010.5%2015.25%2010.5H4.75C4.33579%2010.5%204%2010.1642%204%209.75Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
+              />
+            </div>
+            <div
+              class="flex-1 flex items-center justify-center"
+            >
+              <input
+                class="focus:outline-none focus:ring-0 p-0 m-0 text-center w-15"
+                max="100"
+                name="quantity"
+                type="text"
+                value="0"
+              />
+            </div>
+            <div
+              class="flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] rounded-l-none p-1 h-[36px]  "
+            >
+              <img
+                alt="plus"
+                class=""
+                src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.75%204.75C10.75%204.33579%2010.4142%204%2010%204C9.58579%204%209.25%204.33579%209.25%204.75V9.25H4.75C4.33579%209.25%204%209.58579%204%2010C4%2010.4142%204.33579%2010.75%204.75%2010.75H9.25L9.25%2015.25C9.25%2015.6642%209.58579%2016%2010%2016C10.4142%2016%2010.75%2015.6642%2010.75%2015.25V10.75H15.25C15.6642%2010.75%2016%2010.4142%2016%2010C16%209.58579%2015.6642%209.25%2015.25%209.25H10.75V4.75Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
