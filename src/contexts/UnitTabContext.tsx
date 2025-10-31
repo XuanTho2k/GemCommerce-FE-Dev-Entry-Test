@@ -1,11 +1,5 @@
-import React, { createContext, useState } from "react";
-
-export const EntryContext = createContext({
-  selected: 0,
-  value: "0",
-  setSelected: (unit: number) => {},
-  setValue: (value: string) => {},
-});
+import React, { useState } from "react";
+import { EntryContext } from "./EntryContext";
 
 export const EntryProvider = ({ children }: { children: React.ReactNode }) => {
   const [selected, setSelected] = useState(0);

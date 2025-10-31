@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Button from "./Button";
-import { EntryContext } from "../contexts/UnitTabContext";
+import { EntryContext } from "../contexts/EntryContext";
 
 const UnitTab = () => {
   const { selected, setSelected, value, setValue } = useContext(EntryContext);

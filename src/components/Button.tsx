@@ -1,6 +1,17 @@
 import React from "react";
 import Tooltip from "./Tooltip";
 
+interface Button {
+  isSelected: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  customClass: string;
+  isDisabled: boolean;
+  tooltipContent: string;
+}
+
+type ButtonProps = Partial<Button>;
+
 const Button = ({
   isSelected,
   onClick,
@@ -8,14 +19,7 @@ const Button = ({
   customClass,
   isDisabled = false,
   tooltipContent,
-}: {
-  isSelected: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-  customClass?: string;
-  isDisabled?: boolean;
-  tooltipContent?: string;
-}) => {
+}: ButtonProps) => {
   return (
     <div
       className={`flex items-center relative group flex-1 h-[32px] justify-center cursor-pointer  rounded-md transition-all duration-200 hover:bg-[#3B3B3B] ${customClass} ${

@@ -3,7 +3,7 @@ import minusIcon from "../assets/icons/minus-icon.svg";
 import plusIcon from "../assets/icons/plus-icon.svg";
 import { AdminUtils } from "../utils/utilities";
 import Button from "./Button";
-import { EntryContext } from "../contexts/UnitTabContext";
+import { EntryContext } from "../contexts/EntryContext";
 
 const CustomInput = () => {
   const { selected, value, setValue } = useContext(EntryContext);
