@@ -5,7 +5,7 @@ import { AdminUtils } from "../utils/utilities";
 import Button from "./Button";
 import { EntryContext } from "../contexts/EntryContext";
 
-const CustomInput = () => {
+const AppInput = () => {
   const { selected, value, setValue } = useContext(EntryContext);
   const [isFocused, setIsFocused] = useState(false);
   const [inInputHover, setInInputHover] = useState(false);
@@ -104,4 +104,4 @@ const CustomInput = () => {
   );
 };
 
-export default CustomInput;
+export default AppInput;
