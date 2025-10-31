@@ -1,4 +1,4 @@
-import { EntryProvider } from "../contexts/UnitTabContext";
+import { EntryProvider } from "../contexts/EntryProvider";
 import AppInput from "./AppInput";
 import UnitTab from "./UnitTab";
 
