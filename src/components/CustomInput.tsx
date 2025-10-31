@@ -1,18 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import minusIcon from "../assets/icons/minus-icon.svg";
 import plusIcon from "../assets/icons/plus-icon.svg";
 import { AdminUtils } from "../utils/utilities";
 import Button from "./Button";
+import { EntryContext } from "../contexts/UnitTabContext";
 
-const CustomInput = ({
-  selected,
-  value,
-  setValue,
-}: {
-  selected: number;
-  value: string;
-  setValue: (value: string) => void;
-}) => {
+const CustomInput = () => {
+  const { selected, value, setValue } = useContext(EntryContext);
   const [isFocused, setIsFocused] = useState(false);
   const [inInputHover, setInInputHover] = useState(false);
 

@@ -1,16 +1,9 @@
+import { useContext } from "react";
 import Button from "./Button";
+import { EntryContext } from "../contexts/UnitTabContext";
 
-const UnitTab = ({
-  selected,
-  setSelected,
-  value,
-  setValue,
-}: {
-  selected: number;
-  value: string;
-  setSelected: (value: number) => void;
-  setValue: (value: string) => void;
-}) => {
+const UnitTab = () => {
+  const { selected, setSelected, value, setValue } = useContext(EntryContext);
   return (
     <div className="flex items-center">
       <div className="flex-1 mr-auto text-xs font-normal text-[#AAAAAA]">
